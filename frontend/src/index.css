@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-base: #F9F3EA;
+    --bg-surface: #FDFBF7;
+    --bg-raised: #FFFFFF;
+    --brand-primary: #1d877c;
+    --brand-dark: #155f57;
+    --brand-light: #d4f0ec;
+    --accent: #BD834C;
+    --accent-light: #F5E6D3;
+    --positive: #4A9972;
+    --positive-light: #E8F5EE;
+    --positive-dark: #2E7550;
+    --negative: #CA5742;
+    --negative-light: #FDECEA;
+    --negative-dark: #9E3B2C;
+    --neutral: #5E7287;
+    --text-primary: #2D2A26;
+    --text-secondary: #6B6863;
+    --text-muted: #9C9994;
+    --border: #EAE7E2;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .data-text {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #D1CEC9 transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #D1CEC9;
+    border-radius: 20px;
+  }
+
+  /* Prevent browser autofill from changing text color */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #1A1A1A !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
