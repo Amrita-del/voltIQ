@@ -71,5 +71,6 @@ graph TD
 
 ---
 
+
 ## 🛡️ License
 Built for private development and research as part of the **VoltIQ Platform Roadmap**.
